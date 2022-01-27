@@ -1,7 +1,7 @@
 /*
  * jQuery UI Nested Sortable
  * v 2.2 / 2022-01-27 by Fritz Green
- * https://github.com/ilikenwf/nestedSortable
+ * https://github.com/FritzTGreen/nestedSortable
  *
  * Depends on:
  *	 jquery.ui.sortable.js 1.13+
