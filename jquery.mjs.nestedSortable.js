@@ -1,10 +1,10 @@
 /*
  * jQuery UI Nested Sortable
- * v 2.1a / 2016-02-04
+ * v 2.2 / 2022-01-27 by Fritz Green
  * https://github.com/ilikenwf/nestedSortable
  *
  * Depends on:
- *	 jquery.ui.sortable.js 1.10+
+ *	 jquery.ui.sortable.js 1.13+
  *
  * Copyright (c) 2010-2016 Manuele J Sarfatti and contributors
  * Licensed under the MIT License
@@ -231,6 +231,11 @@
 					$.ui.ddmanager.prepareOffsets(this, event);
 				}
 			}
+
+			this.dragDirection = {
+				vertical: this._getDragVerticalDirection(),
+				horizontal: this._getDragHorizontalDirection()
+			};
 
 			//Regenerate the absolute position used for position checks
 			this.positionAbs = this._convertPositionTo("absolute");
